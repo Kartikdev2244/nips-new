@@ -1,9 +1,21 @@
-import Image from 'next/image'
+import { BrowseRange } from '@/components/core/HomePage/BrowseRange'
+import { Gallery } from '@/components/core/HomePage/Gallery'
+import { HomePage } from '@/components/core/HomePage/HomePage'
+import { OurProducts } from '@/components/core/HomePage/OurProducts'
+import { ShowCase } from '@/components/core/HomePage/ShowCase'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad laboriosam, nihil sapiente deserunt, rem veritatis obcaecati aperiam natus, odit porro unde harum deleniti vitae! Odio enim provident assumenda sed ad!</p>
+<main className="flex min-h-screen justify-center items-center w-full bg-white">
+      <div className="border bg-white">
+        <div className="max-w-[1600px] mx-auto">
+          <HomePage />
+          <BrowseRange />
+          <OurProducts />
+          <ShowCase />
+          <Gallery />
+        </div>
+      </div>
     </main>
   )
 }
